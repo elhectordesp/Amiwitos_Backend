@@ -40,6 +40,7 @@ app.use(passport.session());
 // Routes
 app.use('/auth', require('./routes/auth.routes'));
 app.use('/users', require('./routes/user.routes'));
+app.use('/fileUpload', require('./routes/fileUpload.routes'));
 
 // Configura la conexión a PostgreSQL
 const pool = new Pool({
